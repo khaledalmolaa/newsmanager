@@ -1,0 +1,17 @@
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\NewsManager.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\AlertCenter.Android.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\mscorlib.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\System.Core.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\System.Data.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\System.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\System.EnterpriseServices.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\System.Web.Services.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\System.Xml.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\System.Xml.Linq.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\System.Runtime.Serialization.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\System.ServiceModel.Internals.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\System.Numerics.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\System.Transactions.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\Mono.Data.Tds.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\assemblies\Mono.Security.dll

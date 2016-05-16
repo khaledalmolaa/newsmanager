@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://khalids.com" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://khalids.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://khalids.com">
+      <s:element name="NewsNotify">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="newsID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewsNotifyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NewsNotifyResult" type="tns:ReturnNews" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReturnNews">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NewsID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewsDesc" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="NewsNotifySoapIn">
+    <wsdl:part name="parameters" element="tns:NewsNotify" />
+  </wsdl:message>
+  <wsdl:message name="NewsNotifySoapOut">
+    <wsdl:part name="parameters" element="tns:NewsNotifyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="NewsNotifySoap">
+    <wsdl:operation name="LoginNotify">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Notify when new news inserted</wsdl:documentation>
+      <wsdl:input name="NewsNotify" message="tns:NewsNotifySoapIn" />
+      <wsdl:output name="NewsNotify" message="tns:NewsNotifySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NewsNotifySoap" type="tns:NewsNotifySoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoginNotify">
+      <soap:operation soapAction="http://khalids.com/NewsNotify" style="document" />
+      <wsdl:input name="NewsNotify">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="NewsNotify">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NewsNotifySoap12" type="tns:NewsNotifySoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoginNotify">
+      <soap12:operation soapAction="http://khalids.com/NewsNotify" style="document" />
+      <wsdl:input name="NewsNotify">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="NewsNotify">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NewsNotify">
+    <wsdl:port name="NewsNotifySoap" binding="tns:NewsNotifySoap">
+      <soap:address location="http://kaledalmolaa-001-site1.ftempurl.com/NewsNotify.asmx" />
+    </wsdl:port>
+    <wsdl:port name="NewsNotifySoap12" binding="tns:NewsNotifySoap12">
+      <soap12:address location="http://kaledalmolaa-001-site1.ftempurl.com/NewsNotify.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

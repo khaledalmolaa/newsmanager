@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://khalids.com" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://khalids.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://khalids.com">
+      <s:element name="SendNews">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="newsDesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendNewsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendNewsResult" type="tns:NewsResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="NewsResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="messegeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessegeDet" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendNewsSoapIn">
+    <wsdl:part name="parameters" element="tns:SendNews" />
+  </wsdl:message>
+  <wsdl:message name="SendNewsSoapOut">
+    <wsdl:part name="parameters" element="tns:SendNewsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="myNewsWebServiceSoap">
+    <wsdl:operation name="sendNews">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method To Send News to DataBase</wsdl:documentation>
+      <wsdl:input name="SendNews" message="tns:SendNewsSoapIn" />
+      <wsdl:output name="SendNews" message="tns:SendNewsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="myNewsWebServiceSoap" type="tns:myNewsWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="sendNews">
+      <soap:operation soapAction="http://khalids.com/SendNews" style="document" />
+      <wsdl:input name="SendNews">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SendNews">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="myNewsWebServiceSoap12" type="tns:myNewsWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="sendNews">
+      <soap12:operation soapAction="http://khalids.com/SendNews" style="document" />
+      <wsdl:input name="SendNews">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SendNews">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="myNewsWebService">
+    <wsdl:port name="myNewsWebServiceSoap" binding="tns:myNewsWebServiceSoap">
+      <soap:address location="http://kaledalmolaa-001-site1.ftempurl.com/myNewsWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="myNewsWebServiceSoap12" binding="tns:myNewsWebServiceSoap12">
+      <soap12:address location="http://kaledalmolaa-001-site1.ftempurl.com/myNewsWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

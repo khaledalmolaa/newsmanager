@@ -1,0 +1,16 @@
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\bin\Debug\NewsManager.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\bin\Debug\NewsManager.pdb
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\bin\Debug\NewsManager.NewsManager.apk
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\bin\Debug\NewsManager.NewsManager-Signed.apk
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\NewsManager.csprojResolveAssemblyReference.cache
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\NewsManager.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\NewsManager.pdb
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\android\bin\NewsManager.NewsManager.apk
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\res\layout\main.xml
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\res\values\strings.xml
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\res\drawable\icon.png
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\R.cs.flag
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\uploadflags.txt
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\bin\Debug\AlertCenter.Android.dll
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\obj\Debug\NewsManager.dll.mdb
+C:\Users\khale\Documents\Visual Studio 2015\Projects\NewsManager\NewsManager\bin\Debug\NewsManager.dll.mdb
